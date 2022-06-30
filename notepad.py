@@ -21,6 +21,7 @@ def openFile():
         fl = open(file, "r")
         textArea.insert(1.0, fl.read())
         fl.close()
+
 def saveFile():
     global file
     if file == None:
