@@ -21,7 +21,6 @@ def openFile():
         fl = open(file, "r")
         textArea.insert(1.0, fl.read())
         fl.close()
-
 def saveFile():
     global file
     if file == None:
@@ -71,7 +70,7 @@ if __name__ == '__main__':
     root = Tk()
     root.geometry("590x850")
     root.title("Untitled - Notepad")
-    root.wm_iconbitmap("notepad-3.ico")
+    # root.wm_iconbitmap("notepad-3.ico")
 
     textArea = Text(root, font="georgia 14")
     file = None
